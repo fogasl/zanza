@@ -3,5 +3,8 @@
 env/
 __pycache__/
 htmlcov/
+*.egg-info/
+build/
+dist/
 .py[c|o]
 .coverage
