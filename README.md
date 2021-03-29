@@ -1,5 +1,7 @@
 # Zanza
 
+[![PyPI version](https://badge.fury.io/py/zanza.svg)](https://badge.fury.io/py/zanza)
+
 Dead-simple string obfuscation algorithm.
 
 Obfuscation works by identifying the Unicode code points (character codes) of
