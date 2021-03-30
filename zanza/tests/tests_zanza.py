@@ -1,7 +1,7 @@
-import json
 import unittest
 
 from .. import zanza
+
 
 class ZanzaTests(unittest.TestCase):
 

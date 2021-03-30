@@ -1,16 +1,14 @@
 """
-This script deobfuscates the input sequence that was
-obfuscated by `zanza`.
+This script deobfuscates the input sequence that was obfuscated by `zanza`.
 
-The input needs to be a JSON-encoded list passed as a
-string. To not to confuse the shell with special
-characters like [ and ], the input has to be wrapped
-in double quotes.
+The input needs to be a JSON-encoded list passed as a string. To not to confuse
+the shell with special characters like [ and ], the input has to be wrapped in
+double quotes.
 """
 
+
 def _reduce(fn, iterable, initializer):
-    """Helper method to reduce the input list
-    to a single value.
+    """Helper method to reduce the input list to a single value.
 
     Args:
         fn: Callback function

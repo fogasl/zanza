@@ -2,6 +2,7 @@ import unittest
 
 from .. import dezanza
 
+
 class DezanzaTests(unittest.TestCase):
 
     def test_empty_seq(self):

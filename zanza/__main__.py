@@ -8,6 +8,7 @@ from . import zanza, __doc__ as manual
 
 logger = logging.getLogger(__name__)
 
+
 def main():
     """Obfuscator main program.
     """
