@@ -12,7 +12,7 @@ entry_points = {
 
 setup(
     name="zanza",
-    version="0.1.0",
+    version="0.2.0",
     author="fogasl",
     description="Dead-simple string obfuscation library",
     long_description=open("README.md", "r", encoding="utf8").read(),

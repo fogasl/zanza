@@ -14,8 +14,8 @@ As the project supports **Python 3.0 and up**, all Unicode strings should work.
 
 ## Installation
 
-To install as a **project-dependency**, execute the following command in the
-project's directory:
+To install as a **project dependency**, or **global package**, execute the
+following command in the project's directory:
 
     pip install zanza
 
@@ -46,6 +46,16 @@ _deobfuscation_ (`dezanza`)
 [[6, 5], 45, 1, 5, -12, -3, 13, -104, 92, -5, 13, -11, 22, -111, 105, 1, 1, -15, 0]
 ```
 
+In the command line input can be passed as a *script argument* or from *stdin*.
+
+```bash
+$ zanza "foo bar baz"
+[[1, 0, 2], 9, 0, -79, 66, -1, 17, -82, 66, -1, 25]
+
+$ echo "Encrypt me" | zanza
+[[6, 9], 41, -11, 15, 7, -9, 4, -84, 77, -8]
+```
+
 ### Deobfuscation
 
 ```python
@@ -56,6 +66,16 @@ _deobfuscation_ (`dezanza`)
 
 >>> dezanza([[7, 8], 33, -101, 98, 3, -1, -7, -2, 13, -104, 101, -13, 4, 15, -2, -16, -2, 19, -15, -1])
 'No\nlonger\nobfuscated'
+```
+
+Using the command line:
+
+```bash
+$ dezanza "[[7, 6], 35, 0, -4, -75, 65, 19, -84, 77, -8, -69, 78, 1, 8]"
+Look at me now
+
+$ echo "[[7, 3], 43, -84, 87, -8, 3, -7, 8, -82]" | dezanza
+It works!
 ```
 
 ## License
