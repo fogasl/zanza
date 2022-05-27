@@ -52,8 +52,8 @@ In the command line input can be passed as a *script argument* or from *stdin*.
 $ zanza "foo bar baz"
 [[1, 0, 2], 9, 0, -79, 66, -1, 17, -82, 66, -1, 25]
 
-$ echo "Encrypt me" | zanza
-[[6, 9], 41, -11, 15, 7, -9, 4, -84, 77, -8]
+$ echo "Encrypt me" | zanza # Notice the newline character that echo adds
+[[6, 9], 41, -11, 15, 7, -9, 4, -84, 77, -8, -91]
 ```
 
 ### Deobfuscation
